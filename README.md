@@ -82,3 +82,6 @@ tips: 变量可以在多层次引用文件中使用
 接入ha之后可以一键关联开启多个开关的led等效
 
 
+# 参考
+
+[esphome-config](https://github.com/AlexMekkering/esphome-config)
