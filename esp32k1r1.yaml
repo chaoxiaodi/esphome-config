@@ -51,7 +51,6 @@ switch:
   - platform: gpio
     pin:
       number: $relay_pin_1
-      inverted: true
     name: ${name}_relay_1
     id: ${name}_relay_1
 
