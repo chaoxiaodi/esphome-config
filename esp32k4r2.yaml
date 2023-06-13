@@ -46,12 +46,14 @@ switch:
       number: $relay_pin_1
     name: ${name}_relay_1
     id: ${name}_relay_1
+    restore_mode: RESTORE_DEFAULT_OFF
 
   - platform: gpio
     pin:
       number: $relay_pin_2
     name: ${name}_relay_2
     id: ${name}_relay_2
+    restore_mode: RESTORE_DEFAULT_OFF
 
 binary_sensor:
   - !include common/binary_sensor/status.yaml
