@@ -1,7 +1,7 @@
 ---
 substitutions:
   device: esp32k4r2
-  name: esp32k2r2
+  name: esp32k4r2
   num_leds: '4'
   <<: !include common/substitutions/esp32-keyboard-relay.yaml
 
@@ -14,6 +14,10 @@ esphome:
   name: $device
   # friendly_name: $name
   name_add_mac_suffix: yes
+
+  # on_boot:
+  #   - lambda: |-
+  #       id(ota_pwd).set_auth_password("6f0f4acea72c0081925e70dcea333f90");
 
 esp32:
   board: esp32-c3-devkitm-1
